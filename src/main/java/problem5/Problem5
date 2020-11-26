@@ -1,0 +1,7 @@
+Write the code for the server program that:
+•	listens for the connection requests from the clients on port 8080
+•	once the client requests a connection, opens a connection socket and input/output streams
+•	reads a single line sent by the client through the socket and prints the clients request to the console.
+•	Sends the length of the request back to the client.
+•	Make sure to catch IOException in this method.
+•	No need to write the client.

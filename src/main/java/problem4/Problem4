@@ -1,0 +1,27 @@
+Problem 4 Solution:
+
+(a) Write an SQL query that produces the following result:
++----+------+----------+-------+--------+
+| id | area | number   | descr | userid |
++----+------+----------+-------+--------+
+|  5 | 401  | 444-4444 | Cell  |      4 |
+|  3 | 415  | 222-2222 | Cell  |      2 |
++----+------+----------+-------+--------+
+
+select * from phones where descr = 'Cell' order by area;
+
+(b) Write an SQL query that shows the names of users along with the corresponding phone numbers:
++--------+------+----------+
+| name   | area | number   |
++--------+------+----------+
+| Olga   | 510  | 111-1111 |
+| Olga   | 415  | 123-4567 |
+| Justin | 415  | 222-2222 |
+| Cathy  | 956  | 333-3333 |
+| Alice  | 401  | 444-4444 |
++--------+------+----------+
+select name, area, number from pusers inner join phones on pusers.id = phones.userId;
+
+(c) Write an SQL query that shows the names of users who have more than one phone number:
+
+select name from pusers inner join phones on pusers.id = phones.userId group by userId having count(*) > 1;

@@ -1,0 +1,19 @@
+Problem 1:
+Write a function in class HtmlProcessor that takes an html file (see books.html) that contains information about books in paragraph tags (see below) and prints information about each book to the console. You are required to use regex groups (use Pattern and Matcher) for this problem. Here is a sample html that you may get as an input (note that your code should be general):
+<!DOCTYPE html>
+<html>
+<body>
+<p>Educated: A Memoir, by Tara Westover</p>
+<p>Becoming, by Michelle Obama</p>
+<p>Where the Crawdads Sing, by Delia Owens</p>
+<p>The Splendid and the Vile,
+    by Erik Larson
+</p>
+</body>
+</html>
+
+When this html file is passed to your function, it should print the following:
+Educated: A Memoir by Tara Westover
+Becoming by Michelle Obama
+Where the Crawdads Sing by Delia Owens
+The Splendid and the Vile by Erik Larson
